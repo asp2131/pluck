@@ -2,6 +2,12 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 
+
+// pool.query('SELECT NOW()', (err, res) => {
+//   console.log(err, res)
+//   pool.end()
+// })
+
 const app = express();
 
 app.use(express.static(`${__dirname}/../client/dist`));
